@@ -11,6 +11,7 @@ from apps.models import Profile
 class ShowProfilePageView(DetailView):
     model = Profile
     template_name = 'registration/user_profile.html'
+    # ghcghdfcgh
 
     def get_context_data(self, *args, **kwargs):
         users = Profile.objects.all()
