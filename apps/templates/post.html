@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}Create A New Blog Post! {% endblock %}
+
+{% block content %}
+<table class="table">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-success">Post</button>
+    <thead>
+    <tr>
+
+        <th scope="row">Title</th>
+        <th scope="row">Title Tag</th>
+        <th scope="row">Author</th>
+        <th scope="row">Body</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="col"> </th>
+        <td> </td>
+    </tr>
+    <tr>
+        <th scope="col"> </th>
+        <td> </td>
+    </tr>
+    <tr>
+        <th scope="col"> </th>
+        <td> </td>
+
+    </tr>
+    </tbody>
+    </form>
+
+</table>
+
+{% endblock %}
